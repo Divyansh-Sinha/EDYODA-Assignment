@@ -123,6 +123,8 @@ const Hero = () => {
                  rounded ${option != 2 ? "dark:border-gray-700" : "dark:border-green-700"}
                  ${option == "1" ? "mb-2" : "my-2"}
                     ${option == 2? "bg-green-200":""}
+                    ${option == 1? "bg-gray-200":""}
+                    
                  `}>
             <input id={option}
                 type="radio"
@@ -138,11 +140,11 @@ const Hero = () => {
                     {option == 1 && 
                         <p className='absolute w-32 rounded-b-lg text-center -top-0 text-xs bg-pink-400 text-white' >Offer expired</p>
                     }
-                    <div>
+                    <div className={`${option == 1? "text-gray-500":""}`}>
                         {data} month subscription
                     </div>
 
-                    <div className='mr-1'>
+                    <div  className={`${option == 1? "text-gray-500":""} mr-1`}>
                         Total ₹ {price}
                     </div>
                 </div>
