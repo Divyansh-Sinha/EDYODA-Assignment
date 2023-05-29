@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Plans from './plans/Plans'
 import { ads, book, clock, scholar, tv } from '../assets';
 
+
 const Hero = () => {
 
     const [selectedOption, setSelectedOption] = useState('');
@@ -25,7 +26,7 @@ const Hero = () => {
     };
 
     return (
-        <div className="flex w-full justify-between mt-[72px]">
+        <div className="flex w-full justify-between mt-[60px]">
             <div className="ml-[144px]" >
                 <div className="mb-4">
                     <h1 className="text-6xl font-semibold text-white">Access Curated Course Worth</h1>
@@ -42,23 +43,23 @@ const Hero = () => {
                 <ul className="mt-12 w-[35rem] flex flex-col text-white font-semibold font-san">
                     <li className='flex justify-between text items-center mb-6'>
                         <img className='w-[60px] h-[60px]' src={book} alt="scholar" />
-                        <p className='text-3xl '>100+ Job relevant courses</p>
+                        <p className='text-3xl '><span className='font-semibold text-blue-600' >100+ </span> Job relevant courses</p>
                     </li>
                     <li className='flex justify-between text items-center mb-6'>
                         <img className='w-[60px] h-[60px]' src={clock} alt="scholar" />
-                        <p className='text-3xl '>20,000+ Hours of content</p>
+                        <p className='text-3xl '><span className='font-semibold text-blue-600' >20,000+ </span>Hours of content</p>
                     </li>
                     <li className='flex justify-between text items-center mb-6'>
                         <img className='w-[60px] h-[60px]' src={tv} alt="scholar" />
-                        <p className='text-3xl '>Exclusive webinar access</p>
+                        <p className='text-3xl '><span className='font-semibold text-blue-600' >Exclusive </span> webinar access</p>
                     </li>
                     <li className='flex justify-between text items-center mb-6'>
                         <img className='w-[60px] h-[60px]' src={scholar} alt="scholar" />
-                        <p className='text-3xl '>Scholarship worth ₹94,500</p>
+                        <p className='text-3xl '>Scholarship worth <span className='font-semibold text-blue-600' >₹94,500</span> </p>
                     </li>
                     <li className='flex justify-between text items-center mb-6'>
                         <img className='w-[60px] h-[60px]' src={ads} alt="scholar" />
-                        <p className='text-3xl '>Ad Free learning experience</p>
+                        <p className='text-3xl '><span className='font-semibold text-blue-600' >Ad Free</span> learning experience</p>
                     </li>
                 </ul>
             </div>
@@ -100,9 +101,9 @@ const Hero = () => {
                     </div>
                     <span className='text-xs'>Offer valid till 25th March 2023 </span>
                     </div>
-                    <div className='flex justify-between mt-1'>
+                    <div className='flex justify-between my-2'>
                         <p>Total (Incl. of 18% GST)</p>
-                        <span>{total}</span>
+                        <span>₹{total}</span>
                     </div>
                     <div className="flex justify-between">
                         <button className="w-[200px] h-[56px] bg-transparent border border-red-400 hover:bg-red-500 text-red-400 font-bold py-2 px-4 rounded mr-2">

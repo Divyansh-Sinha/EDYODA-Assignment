@@ -3,6 +3,8 @@ import { logo } from '../../assets'
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const Navbar = () => {
@@ -67,13 +69,9 @@ const Navbar = () => {
 
 
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center justify-between w-96">
                 <div className="relative mr-4">
-                    <input
-                        type="text"
-                        placeholder="Search"
-                        className="pl-8 pr-4 py-2 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:shadow-outline"
-                    />
+                <FontAwesomeIcon icon={faSearch} className="search-icon" />
                     <div className="absolute top-0 left-0 mt-3 ml-3">
                         <svg
                             className="fill-current text-gray-400 h-4 w-4"

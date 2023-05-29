@@ -1,5 +1,6 @@
 import {Navbar , Hero} from  './components';
 import Plans from './components/plans/Plans';
+import './App.css'
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
 
       </div> */}
 
-      <div className="bg-hero-pattern w-full  h-screen">
+      <div className="circle-gradient w-full  h-screen">
         <Navbar/>
         <Hero/>
         {/* <Plans></Plans> */}
